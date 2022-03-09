@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: marlonruiz/nginx-mirror:${trigger['tag']}
+          image: ${trigger['image']}:${trigger['tag']}
           imagePullPolicy: Always
           ports:
             - containerPort: 80
