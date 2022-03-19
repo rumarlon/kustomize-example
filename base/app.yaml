@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: &app-name hola-mundio
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
     - port: 8080
       targetPort: 8080
